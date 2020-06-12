@@ -1,0 +1,166 @@
+* {
+	margin: 0px;
+	padding:  0px;
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	font-family: Arial;
+	font-size: 12px;
+	
+}
+
+#menu {
+	width: 1100px;
+	height: 38px;
+	background: #78b43d;
+	margin: 0px auto;
+	
+}
+
+ul {
+	margin-top: 20px;
+	
+}
+
+ul>li {
+	list-style: none;
+	float: left;
+	
+}
+
+ul>.li-0 {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding:  0px 15px  0px 10px;
+	line-height: 38px;
+	border-right: 1px white solid;
+	width: 90px;
+	height: 38px;
+}
+
+ul>.li-1 {
+	display: inline-block;
+	text-decoration: none;
+	
+	padding-left: 40px;
+	line-height: 38px;
+	border-right: 1px white solid;
+	width: 100px;
+
+}
+
+ul.root li.li-1 > a > i{
+	position: absolute;
+	font-size: 20px;
+	top: 29px;
+	left: 265px;
+	/* display: inline-block; */
+}
+
+ul.root li.li-2 a {
+	text-decoration: none;
+	color: white;
+	padding: 0px 10px  0px 10px;
+	line-height: 38px;
+	border-right: 1px white solid;
+}
+
+ul>.li-cuoi {
+	float: right;
+	color: white;
+}
+
+ul.root > li.li-cuoi > a > i{
+	font-size: 25px;
+	display: inline-block;
+	/* position: absolute; */
+	top: 29px;
+	margin-top: 7px;
+	margin-right: 15px;
+}
+
+ul > li > a {
+	/* display: block; */
+}
+
+
+ul > li > a:hover {
+	/* background: orange; */
+	/* color: red; */
+	/* font-size: 14px; */
+	z-index: 10;
+	display: block;
+	background: #FF9900;
+	transform: scale(1.2);
+	transition:  ease-in 0.60s;
+	-moz-transition: ease-in 0.60s;
+	-webkit-transition: ease-in 0.60s;
+	text-align: center;
+}
+
+ul.root li.li-2 a:hover {
+	border: 0px;
+}
+
+.sub-menu {
+	width: 182px;
+	background: #aad862;
+	min-height: 378px;
+	margin-top: 0px;
+	/* margin-left: 0px; */
+	display: none;
+}
+.sub-menu .sub-item {
+	height: 26px;
+	width: 100%;
+	color: black;
+	clear: left;
+	display: block;
+	border-bottom: 1px white solid;
+	line-height: 26px;
+	text-indent: 10px;
+}
+ul.root > li:hover ul.sub-menu {
+	display: block;
+	position: absolute;
+}
+
+.sub-menu .sub-item i{
+	/* display: inline-block; */
+	/* top: 60px; */
+	font-size: 15px;
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+ul.root li.li-0 ul.sub-menu {
+	margin-top: -13px;
+}
+
+ul.menu-con {
+	width: 140px;
+	height: 185px;
+	display: none;
+	background: #78b43d;
+	position: absolute;
+	left: 182px;
+	top: 15px;
+	clear: left;
+} 
+
+ul.menu-con li.item-con {
+	border-bottom: 1px white solid;
+	width: 100%;
+}
+
+
+
+ul.root li.li-0 ul.sub-menu li:hover .menu-con {
+	display: block;
+}
+
+
+

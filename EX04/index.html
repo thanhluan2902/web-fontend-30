@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex-01</title>
+	<style>
+		H1 {
+			position: fixed;
+		}
+		#div-1 {
+			width: 100%;
+			border: 10px red solid;
+			height: 200px;
+			overflow: auto;
+		}
+
+		#div-1 #div-2 {
+			border: 1px blue groove;
+			background: #1d9f75;
+			padding:  20px 50px 20px 50px;
+			margin: 20px 50px 20px 52px;
+			color: white;
+			font-size: 30px;
+		}
+		p::before {
+			content: "alo alo -";
+		}
+		p::after {
+			content: "- ko nghe thì tôi cũng đến chịu";
+		}
+		#my-div {
+			width: 200px;
+			height: 200px;
+			background: blue;
+			position: relative;
+			top: 100px;
+			z-index: 2;			
+		}
+		#my-div .noname {
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: absolute;	
+			top: 10px;
+			left: 20px;
+			z-index: 1;
+		}
+		#my-div-1 {
+			width: 300px;
+			height: 300px;
+			background: yellow;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hello zent</h1>
+	<div id="div-1">
+		<div id="div-2">
+			Hello bây bê
+			<p>Tôi nói đồng bào có nghe rõ ko?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut ad consequuntur eaque, nemo quidem dolor dicta! Possimus temporibus sequi ab iusto dignissimos quas sunt laborum ex natus architecto laudantium quia mollitia, cupiditate unde accusantium, quam facilis, aliquam ipsum rem numquam! Eligendi distinctio reprehenderit provident est ullam harum earum mollitia ratione consequuntur neque, temporibus deserunt laudantium hic maxime sapiente, quo voluptatem quasi. Suscipit natus voluptates possimus aliquid molestiae eos iure reprehenderit, architecto, sed magni eveniet quibusdam officiis, iste minima tenetur sunt voluptas modi repellendus! Labore assumenda dolore, nemo nisi vel quas sequi? Totam, nisi ipsam id corporis facere architecto sed.</p>
+		</div>
+	</div>
+	<div id="my-div">
+		<div class="noname"></div>
+	</div>
+	<div id="my-div-1"></div>
+</body>
+</html>
