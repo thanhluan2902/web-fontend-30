@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.div-1 {
+		width: 100px;
+		height: 100px;
+		background: black;
+		position: relative;
+		animation-name: move;
+		animation-duration: 5s;
+		animation-iteration-count: 3; 
+		-webkit-animation-name: move;  
+		-webkit-animation-duration: 5s;
+		animation-direction: reverse;
+		animation-timing-function: ease;    
+	}
+	.div-2 {
+		width: 200px;
+		height: 200px;
+		background: green;
+		transition: width 2s, height 4s, background 2s;
+		margin-top: 20px;
+	}
+	.div-2:hover {
+		width: 400px;
+		height: 500px;
+		background: red;
+	}
+	.div-3 {
+		width: 200px;
+		height: 200px;
+		background: linear-gradient(to right,red,yellow);
+		margin-top: 20px;
+		margin-left: 100px;
+		box-shadow: 10px 10px 5px gray;
+		text-shadow: 10px 10px 5px white;
+	}
+	.div-3:hover {
+		transform: scale(1.5, 1.5)
+	}
+
+	@keyframes move {
+		from {
+			background: red;
+			left: 0;
+		}
+		25% {
+			background: blue;
+		}
+		25% {
+			background: gray;
+		}
+		25% {
+			background: yellow;
+		}
+		25% {
+			background: pink;
+		}
+		to {
+			background: green;
+			left: 100%;
+		}
+	}
+</style>
+<body>
+	<div class="div-1"></div>
+	<div class="div-2"></div>
+	<div class="div-3"><h1>Hello mấy cưng</h1></div>
+</body>
+</html>

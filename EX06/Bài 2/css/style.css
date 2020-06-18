@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Tahoma;
+}
+
+#container {
+	margin: 0px auto;
+	width: 80%;
+	margin-top: 20px;
+}
+.header {
+	width: 100%;
+	background: red;
+	height: 70px;
+	position: relative;
+}
+.header .menu-top {
+	width: 50%;
+	position: absolute;
+	left: 300px;
+	top: 22px;
+}
+.header .menu-top>li {
+	border-top: 1px gray solid;
+	color: #92d2c7;
+	width: 15%;
+	height: 26px;
+	float: left;
+	line-height: 26px;
+	list-style: none;
+	border-bottom: 1px gray solid;
+	/* padding-left: 9px; */
+	text-align: center;
+}
+
+.header .logo img{
+	max-width: 150px;
+	position: relative;
+	left: 465px;
+}
+
+#mid {
+	background: #f3f5f7;
+	width: 100%;
+	height: 1013px;
+}
+#mid .mid-1 {
+	width: 60%;
+	height: 230px;
+	margin: 0px auto;
+	text-align: center;
+	height: 220px;
+	/* border-bottom: 1px red solid; */
+}
+#mid .mid-1>h1{
+	color: #3ab09f;
+	padding-top: 115px;
+
+}
+#mid .mid-1>p{
+	color: gray;
+	padding-top: 10px;
+}
+
+#mid .mid-2 {
+	width: 100%;
+	margin: 0px auto;
+	padding-left: 65px;
+	/* padding-bottom: 20px; */
+}
+
+#mid .mid-2 .image {
+	width: 300px;
+	float: left;
+	padding-left: 10px;
+}
+#mid .mid-2 .image>img{
+	width: 300px;
+}
+
+#mid .no-name {
+	clear: left;
+	color: gray;
+	padding-top: 53px;
+	padding-left: 132px;
+}
+
+
+/* main */
+.main {
+	width: 100%;
+}
+.main .main-left {
+	width: 55%;
+	color: gray;
+	height: 250px;
+	padding-top: 30px;
+	padding-left: 75px;
+	float: left;
+}
+.main .main-left>h1{
+	
+}
+
+.main .main-left>p{
+	padding-top: 10px;
+}
+
+.main .main-right {
+	float: left;
+	color: gray;
+	padding-top: 30px;
+	padding-left: 50px;
+}
+
+.main .main-right>p{
+	padding-top: 15px;
+}
+.main .main-icon{
+	clear: left;
+	font-size: 30px;
+	padding-top: 20px;
+}
+.main .main-icon i{
+	margin-right: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* footer */
+#footer {
+	background: #9accc5;
+	width: 100%;
+	/* height: 500px; */
+	border-top: 1px dashed;
+	color: white;
+	padding-left: 50px;
+	padding-top: 40px;
+}
+
+#footer .footer-1 {
+	width: 100%;
+	height: 63px;
+}
+
+#footer .footer-2{
+	padding-bottom: 10px;
+}
+#footer .footer-2 > label{
+
+}
+#footer .footer-2>input{
+	display: inline-block;
+	width: 90%;
+	height: 27px;
+	padding-left: 10px;
+	margin-top: 7px;
+	box-shadow: -5px -5px 2px gray;
+	border-color: white;
+}
+
+#footer .footer-3{
+	padding-bottom: 10px;
+}
+#footer .footer-3 > label{
+
+}
+#footer .footer-3>textarea{
+	display: inline-block;
+	margin-top: 7px;
+	box-shadow: -5px -5px 2px gray;
+}
+#footer .button>input{
+	background: #2c6f62;
+	color: white;
+	width: 70px;
+	height: 25px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+
