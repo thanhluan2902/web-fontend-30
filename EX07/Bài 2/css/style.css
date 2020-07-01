@@ -1394,8 +1394,20 @@ body {
 		position: absolute;
 		top: 3%;
 	}
+
+	.menu::after {
+		position: absolute;
+		content: "List";
+		font-size: 25px;
+		font-weight: 550;
+		color: white;
+		top: 0;
+		left: 82%;
+	}
 	#header .top .top-left {
-		width: 100%;
+		width: 80%;
+
+		float: left;
 	}
 	#header .top .top-left p {
 		padding-left: 5%;
