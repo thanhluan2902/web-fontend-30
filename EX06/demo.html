@@ -2,35 +2,111 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>demo</title>
 	<style>
 		.my-div {
-			width: 200px;
-			position: absolute;
+			width: 25%;
+			position: relative;
+			background: gray;
+			float: left;
+
+		}
+		.my-div img{
+			width: 100%;
 		}
 		.info {
+			width: 100%;
 			position: absolute;
-			bottom: -80px;
-			left: 1px;
+			bottom: -100%;
+			/* overflow: hidden; */
+			/* left: 1px; */
 			text-align: center;
 			overflow: hidden;
 			color: white;
-			transition: bottom 3s, background 3s;
+			height: 295px;
+
+			transition: bottom 3s, background 3s, color 3s;
 		}
 
 		.my-div:hover .info{
-			bottom: 20px;
+			bottom: 0%;
 			background: pink;
-		</style>
-	</head>
-	<body>
-		<div class="my-div">
-			<img src="audio/ip.jpg" alt="">
-			<div class="info">
-				<h3>Iphon xs-max</h3>
-				<h3>giá cao vkl ae ạ</h3>
-				<p>lại bảo sai đi, tôi lại đấm</p>
-			</div>
+			color: red;
+		}
+
+		.footer {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		@media all and (min-width: 630px) and (max-width: 780px) {
+			.my-div {
+				width: 50%;
+				position: relative;
+				/* background: red; */
+				float: left;
+			}
+		}
+
+		@media all and (min-width: 325px) and (max-width: 480px) {
+			.my-div {
+				width: 100%;
+				position: relative;
+				/* background: red; */
+				float: left;
+				margin-top: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="my-div">
+		<img src="audio/new_microsoft_surface_laptop_3_02.jpg" alt="">
+		<div class="info">
+			<h3>Laptop Gia rẻ</h3>
+			<h3>giá cao vkl ae ạ</h3>
+			<p>lại bảo sai đi, tôi lại đấm</p>
 		</div>
-	</body>
-	</html>
+		<footer class="footer">
+			<center><p>Laptop XS-max</center></p>	
+		</footer>
+	</div>
+
+	<div class="my-div">
+		<img src="audio/new_microsoft_surface_laptop_3_02.jpg" alt="">
+		<div class="info">
+			<h3>Laptop Gia rẻ</h3>
+			<h3>giá cao vkl ae ạ</h3>
+			<p>lại bảo sai đi, tôi lại đấm</p>
+		</div>
+		<footer class="footer">
+			<center><p>Laptop XS-max</center></p>	
+		</footer>
+	</div>
+
+	<div class="my-div">
+		<img src="audio/new_microsoft_surface_laptop_3_02.jpg" alt="">
+		<div class="info">
+			<h3>Laptop Gia rẻ</h3>
+			<h3>giá cao vkl ae ạ</h3>
+			<p>lại bảo sai đi, tôi lại đấm</p>
+		</div>
+		<footer class="footer">
+			<center><p>Laptop XS-max</center></p>	
+		</footer>
+	</div>
+
+	<div class="my-div">
+		<img src="audio/new_microsoft_surface_laptop_3_02.jpg" alt="">
+		<div class="info">
+			<h3>Laptop Gia rẻ</h3>
+			<h3>giá cao vkl ae ạ</h3>
+			<p>lại bảo sai đi, tôi lại đấm</p>
+		</div>
+		<footer class="footer">
+			<center><p>Laptop XS-max</center></p>	
+		</footer>
+	</div>
+</body>
+</html>
