@@ -3,24 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
-	<title>Bài 3</title>
+	<title>Document</title>
 </head>
 <body>
-	<div id="container">
-		Chọn kích thước: <input type="number" class="w" value="15" onchange = "myfunction()"
-		>
-		<br><br>
-		<button class="font" onclick="setFont(0,'20px')">Mặc định</button>
-		<button class="font"
-		onclick="setFont(0,'30px')">
-			Lớn
-		</button>
-		<button class="font" 
-		onclick="setFont(0,'10px')">Nhỏ</button>
-		<br><br><br>
-		<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic suscipit vero ex ullam reprehenderit. Quia fugiat suscipit natus officiis dolorum, optio eveniet sit asperiores odio libero ipsam eos corporis dolor?</p>
-	</div>
+
+	font-size: <input type="number" id="w" onchange="myFunction()" value="10">
+	<p id="rec">Content 1</p>
 	
+	<button id="button" onclick="myFunction1()" value="1">add size</button>
+	<button id="button" onclick="myFunction2()">out size</button>
+	<button id="button" onclick="myFunction3()" value="1">defaut s</button>
+	<script type="text/javascript">
+		function myFunction(){
+			var w = document.getElementById('w').value;
+
+			document.getElementById('rec').style.fontSize = w + "px";
+		}
+
+		function myFunction1(){
+			var x = document.getElementById('button').value;
+		
+			document.getElementById('rec').style.fontSize = x + "40%";
+		}
+		function myFunction2(){
+			document.getElementById('rec').style.fontSize =  "10px";
+		}
+		function myFunction3(){
+			var y = document.getElementById('button').value;
+		
+			document.getElementById('rec').style.fontSize = "20px";
+		}
+
+	</script>
 </body>
-<script type="text/javascript" src="index.js"></script>
 </html>
