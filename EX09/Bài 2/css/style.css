@@ -1,0 +1,51 @@
+body {
+	width: 60%;
+	margin: 0px auto;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	color: red;
+}
+.container {
+	width: 100%;
+	height: 700px;
+	background: #adbddf;
+}
+.container .container-left {
+	width: 10%;
+	background: pink;
+	height: 100%;
+	float: left;
+}
+
+.container .container-left .checkBox {
+	width: 100%;
+	height: 10%;
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	box-sizing: border-box;
+	text-align: center;
+
+}
+.container .container-left .checkBox .input {
+	margin-top: 28px;
+}
+
+.container .container-right {
+	width: 90%;
+	height: 100%;
+	float: left;
+}
+
+.container .container-right .info {
+	width: 100%;
+	height: 10%;
+	border-bottom: 1px gray solid;
+	box-sizing: border-box;
+	padding-top: 23px;
+	padding-left: 20px;
+	font-size: 19px;
+}
+
