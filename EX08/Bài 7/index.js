@@ -33,6 +33,7 @@ for(var i=0; i<8; i++) {
 			document.write('&nbsp;&nbsp;');
 	}
 }
+
 document.write('<br/>');
 
 for(var i=0; i<8 ; i++){
