@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Form</title>
+    <style type="text/css">
+        .error {
+            color: red;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="frm">
+        <input type="text" name="email">
+        <i class="error"></i>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script type="text/javascript">
+    var email = document.frm.email;
+    email.addEventListener('change', function() {
+        var emailValue = this.value;
+
+        var msg_error = '';
+
+        if (emailValue = '') {
+            msg_error = 'Không được bỏ trống';
+        }
+        else if (emailValue.length < 8) {
+            msg_error = 'Độ dài không được nhỏ hơn 8 ký tự';   
+        }
+        else {
+            msg_error = '';
+        }
+       
+        this.nextElementSibling.innerHTML = msg_error;
+
+    });
+
+    document.frm.addEventListener('submit', function() {
+        var emailValue = this.email.value;
+
+        var msg_error = '';
+
+        if (emailValue == '') {
+            msg_error = 'Không được bỏ trống';
+        }
+        else if (emailValue.length < 8) {
+            msg_error = 'Độ dài không được nhỏ hơn 8 ký tự';   
+        }
+        else {
+            msg_error = '';
+        }
+        console.log(msg_error);
+        emailValue.nextElementSibling.innerHTML = msg_error;
+
+        var pwdValue = this.password.value;
+
+        // var msg_error = '';
+
+        // if (emailValue == '') {
+        //     msg_error = 'Không được bỏ trống';
+        // }
+        // else if (emailValue.length < 8) {
+        //     msg_error = 'Độ dài không được nhỏ hơn 8 ký tự';   
+        // }
+        // else {
+        //     msg_error = '';
+        // }
+        // console.log(msg_error);
+        pwdValue.nextElementSibling.innerHTML = msg_error;
+    });
+
+
+    function next() {
+        console.log('Đang test hàm setInterval');
+    }
+    setInterval(function() {
+        next(); //Mỗi 10s (10000 ms) sẽ thực hiện function next, chạy vĩnh viễn
+    }, 10000);
+
+    // setTimeout(function() {}, 10000); //Chờ 10s (10000 ms) sẽ thực hiện function
+    
+    var str = 'Hello word Webfrontend';
+    console.log(str.includes('word'));
+
+    var index;
+    var name = 'Luân';
+    var arr = ['Hoàng Anh', 'Luân', 'Sinh'];
+    for (var i = arr.length - 1; i >= 0; i--) {
+        if (name == arr[i]) {
+            index = i;
+        }
+    }
+
+    console.log(index);
+
+    var subArr = ['Uyên', 'Thành', 'Phong'];
+
+    subArr[index];
+    //Luân
+    // console.log(arr[ind/ex].className = arr[index].className + ' active');
+    // 
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Bài 2</title>
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<div class="left">
+				<div class="label">Họ và tên</div>
+				<div class="label">Gioi tính</div>
+				<div class="label">Email</div>
+				<div class="label">Số điện thoại</div>
+				<div class="label">Mật khẩu</div>
+				<div class="label">Xác nhận mật khẩu</div>
+			</div>
+
+			<div class="right">
+				<div class="label-1">
+					<input type="text" placeholder="Ho va ten" id="name">
+					<a href="" id="error"></a>
+					<div id="trueCheck">
+					<i class="fa fa-check" aria-hidden="true"></i></div>
+				</div>
+				<div class="label-2" id="radio">
+					<input type="radio" name="gender">Nam&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="gender">Nữ
+				</div>
+				<div class="label-1">
+					<input type="text" placeholder="Nhap email" id="email">
+					<a href="" id="error-1"></a>
+					<div id="trueCheck-1">
+					<i class="fa fa-check" aria-hidden="true"></i></div>
+				</div>
+				<div class="label-1">
+					<input type="text" placeholder="So dien thoai" id="phone">
+					<a href="" id="error-2"></a>
+					<div id="trueCheck-2">
+					<i class="fa fa-check" aria-hidden="true"></i></div>
+				</div>
+				<div class="label-1">
+					<input type="password" placeholder="Pasword" id="password">
+					<a href="" id="error-3"></a>
+					<div id="trueCheck-3">
+					<i class="fa fa-check" aria-hidden="true"></i></div>
+				</div>
+				<div class="label-1">
+					<input type="password" placeholder="Repassword" id="rePassword">
+					<a href="" id="error-4"></a>
+					<div id="trueCheck-4">
+					<i class="fa fa-check" aria-hidden="true"></i></div>
+				</div>
+			</div>
+		</div>
+		<button onclick="save()" id="btn">Đăng ký</button>
+	</div>
+</body>
+<script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+<script type="text/javascript" src="index.js"></script>
+</html>
