@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			width: 70%;
+			margin: 0px auto;
+		}
+		.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			text-align: left;
+			border: none;
+			outline: none;
+			transition: 0.4s;
+		}
+
+		.active, .accordion:hover {
+			background-color: #ccc;
+		}
+		.accordion:after {
+			content: '\002B';
+			font-size: 13px;
+			color: #777;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active:after {
+			content: "\2212";
+		}
+		.panel {
+			padding: 0 18px;
+			background-color: white;
+			display: none;
+			overflow: hidden;
+		}
+	</style>
+	<title>Bài 3</title>
+</head>
+<body>
+	<button class="accordion">Section 1</button>
+	<div class="panel">
+		<p>Lorem ipsum...</p>
+	</div>
+
+	<button class="accordion">Section 2</button>
+	<div class="panel">
+		<p>Lorem ipsum...</p>
+	</div>
+
+	<button class="accordion">Section 3</button>
+	<div class="panel">
+		<p>Lorem ipsum...</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+	/* Chuyển đổi giữa việc thêm và xóa lớp "hoạt động",
+    để tô sáng nút điều khiển bảng điều khiển */
+    this.classList.toggle("active");
+
+    
+	/* Chuyển đổi giữa ẩn và hiển thị bảng điều khiển hoạt động */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+    	panel.style.display = "none";
+    } else {
+    	panel.style.display = "block";
+    }
+});
+}
+</script>
+</html>
