@@ -68,12 +68,9 @@ slider.addEventListener('transitionend', () => {
 	}
 });
 
-
-setInterval(function() {
-	slide();
-}, 2000);
-
 buttons.forEach(btn => btn.addEventListener('click', btnCheck));
 options.forEach(option => option.addEventListener('click', optionFunc));
 
-
+setInterval(function() {
+	update();
+}, 2000);

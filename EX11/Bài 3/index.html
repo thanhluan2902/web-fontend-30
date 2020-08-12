@@ -64,12 +64,8 @@
 
 	for (i = 0; i < acc.length; i++) {
 		acc[i].addEventListener("click", function() {
-	/* Chuyển đổi giữa việc thêm và xóa lớp "hoạt động",
-    để tô sáng nút điều khiển bảng điều khiển */
     this.classList.toggle("active");
 
-    
-	/* Chuyển đổi giữa ẩn và hiển thị bảng điều khiển hoạt động */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
     	panel.style.display = "none";

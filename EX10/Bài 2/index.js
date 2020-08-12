@@ -23,33 +23,33 @@ function save(){
     if(email !==''){
         if (re.test(email) == false) 
         {
-         document.getElementById('error-1').innerHTML = 'Email sai dinh dang kia ma!';
-         document.getElementById('trueCheck-1').style.display = "";
-     }else{
-         document.getElementById('error-1').innerHTML = '';
-         document.getElementById('trueCheck-1').style.display = "block";
-     }
- }else{
-     document.getElementById('error-1').innerHTML = 'Vui long nhap email!';
-     document.getElementById('trueCheck-1').style.display = "";
- }
+           document.getElementById('error-1').innerHTML = 'Email sai dinh dang kia ma!';
+           document.getElementById('trueCheck-1').style.display = "";
+       }else{
+           document.getElementById('error-1').innerHTML = '';
+           document.getElementById('trueCheck-1').style.display = "block";
+       }
+   }else{
+       document.getElementById('error-1').innerHTML = 'Vui long nhap email!';
+       document.getElementById('trueCheck-1').style.display = "";
+   }
 
 
 
 
- var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
- if(phone !==''){
+   var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+   if(phone !==''){
     if (vnf_regex.test(phone) == false) 
     {
-     document.getElementById('error-2').innerHTML = 'Sai dinh dang kia ma!';
-     document.getElementById('trueCheck-2').style.display = "";
- }else{
-     document.getElementById('error-2').innerHTML = '';
-     document.getElementById('trueCheck-2').style.display = "block";
- }
+       document.getElementById('error-2').innerHTML = 'Sai dinh dang kia ma!';
+       document.getElementById('trueCheck-2').style.display = "";
+   }else{
+       document.getElementById('error-2').innerHTML = '';
+       document.getElementById('trueCheck-2').style.display = "block";
+   }
 }else{
- document.getElementById('error-2').innerHTML = 'Vui long nhap sdt!';
- document.getElementById('trueCheck-2').style.display = "";
+   document.getElementById('error-2').innerHTML = 'Vui long nhap sdt!';
+   document.getElementById('trueCheck-2').style.display = "";
 }
 
 
