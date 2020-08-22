@@ -1,11 +1,8 @@
-<?php 
-	session_start();
-	foreach ($_SESSION['info'] as $key => $value) {
-		if ($_GET['id'] == $key) {
-			unset($_SESSION['info'][$key]);
-			// echo "yes";
-		}	
-	}
+<?php
+    session_start();
 
-	header('Location:list.php');
- ?>
+    // session_destroy();
+    $MSP = $_GET['msp'];
+    unset($_SESSION['cart'][$MSP]);
+    header('location:cart.php');
+?>
